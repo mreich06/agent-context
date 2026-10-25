@@ -41,3 +41,9 @@ description: Write a spec in specs/ for a user story before any code is written.
 
 - Don't fill a gap. Put it in Assumptions and Open questions
 - Keep specs concise: only what is core to the feature, so I can verify the spec quickly
+- Cover only core behavior and error cases. No implementation details (tables, indexes, locks, libraries)
+- Keep the spec as short as possible: core behavior and error cases only. Anything else goes under Open questions
+- One acceptance criterion per behavior or error status. Merge near-duplicates
+- Every error status gets one row in the contract and is covered by a criterion, with no extra cases beyond those
+- Each assumption and open question is one line, with a reason or a default. Drop any that restate a requirement
+- No requirement may repeat another requirement, assumption or the contract
